@@ -14,7 +14,9 @@ const AppNavbar = ({ onSearch, onAddNote }) => {
             aria-label="Search"
             onChange={(e) => onSearch(e.target.value)}
           />
-          <Button variant="outline-success">Rechercher</Button>
+          <Button variant="outline-success" type="button">
+            Rechercher
+          </Button>
         </Form>
         <Button variant="primary" className="ms-3" onClick={onAddNote}>
           Ajouter une note

@@ -105,7 +105,7 @@ const App = () => {
 
   return (
     <div className="container mx-auto flex flex-col items-center py-8 relative">
-      <AppNavbar />
+      <AppNavbar onAddNote={() => handleShow()} />
       <h1 className="text-3xl font-bold mb-6 text-gray-800">Notes</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
         {notesList.map((note) => (
